@@ -19,15 +19,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameCheck", "NameCheck\Name
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DateTime", "DateTime", "{DA506FA4-E355-45AD-9B82-8C66E8D23704}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddDays", "AddDays\AddDays.csproj", "{FC482CE0-9995-46BF-9245-7462AB22A379}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTime-Q1", "AddDays\DateTime-Q1.csproj", "{FC482CE0-9995-46BF-9245-7462AB22A379}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddMonths", "AddMonths\AddMonths.csproj", "{C464CAB8-3E1F-4E7B-8DA6-52D3B5ED36D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTime-Q2", "AddMonths\DateTime-Q2.csproj", "{C464CAB8-3E1F-4E7B-8DA6-52D3B5ED36D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "First day of the month", "First day of the month\First day of the month.csproj", "{56434B01-A031-4155-A07C-F2BCE6B16ABC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTime-Q3", "First day of the month\DateTime-Q3.csproj", "{56434B01-A031-4155-A07C-F2BCE6B16ABC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Last day of the month", "Last day of the month\Last day of the month.csproj", "{9CAEDC6E-19C7-49BC-B78B-2095AE25BB97}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTime-Q4", "Last day of the month\DateTime-Q4.csproj", "{9CAEDC6E-19C7-49BC-B78B-2095AE25BB97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Every Sunday in this year", "Every Sunday in this year\Every Sunday in this year.csproj", "{618BE513-CC3F-4D32-BE36-18DA6CD4D51C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTime-Q5", "Every Sunday in this year\DateTime-Q5.csproj", "{618BE513-CC3F-4D32-BE36-18DA6CD4D51C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTime-Q6", "DateTime-Q6\DateTime-Q6.csproj", "{A30481BC-7F10-4E5C-B505-E2021EBA91DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTime-Q7", "DateTime-Q7\DateTime-Q7.csproj", "{37C408A7-895B-4E8D-B8DE-3DA1A670832B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +83,14 @@ Global
 		{618BE513-CC3F-4D32-BE36-18DA6CD4D51C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{618BE513-CC3F-4D32-BE36-18DA6CD4D51C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{618BE513-CC3F-4D32-BE36-18DA6CD4D51C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A30481BC-7F10-4E5C-B505-E2021EBA91DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A30481BC-7F10-4E5C-B505-E2021EBA91DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A30481BC-7F10-4E5C-B505-E2021EBA91DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A30481BC-7F10-4E5C-B505-E2021EBA91DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37C408A7-895B-4E8D-B8DE-3DA1A670832B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37C408A7-895B-4E8D-B8DE-3DA1A670832B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37C408A7-895B-4E8D-B8DE-3DA1A670832B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37C408A7-895B-4E8D-B8DE-3DA1A670832B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,6 +107,8 @@ Global
 		{56434B01-A031-4155-A07C-F2BCE6B16ABC} = {DA506FA4-E355-45AD-9B82-8C66E8D23704}
 		{9CAEDC6E-19C7-49BC-B78B-2095AE25BB97} = {DA506FA4-E355-45AD-9B82-8C66E8D23704}
 		{618BE513-CC3F-4D32-BE36-18DA6CD4D51C} = {DA506FA4-E355-45AD-9B82-8C66E8D23704}
+		{A30481BC-7F10-4E5C-B505-E2021EBA91DF} = {DA506FA4-E355-45AD-9B82-8C66E8D23704}
+		{37C408A7-895B-4E8D-B8DE-3DA1A670832B} = {DA506FA4-E355-45AD-9B82-8C66E8D23704}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7375F243-97FA-43C9-9F33-24741D0C1F07}
