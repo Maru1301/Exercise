@@ -12,7 +12,11 @@ namespace Every_Sunday_in_this_year
 		static void Main(string[] args)
 		{
 			Console.Write("請輸入年份: ");
-			int year = Convert.ToInt32(Console.ReadLine());
+			bool isInt = int.TryParse(Console.ReadLine(), out int year);
+			if (!isInt)
+			{
+				Console.WriteLine("輸入錯誤");
+			}
 			DateTime[] Sundays = new DateTime[0];
 			int index = 0;
 
@@ -28,6 +32,7 @@ namespace Every_Sunday_in_this_year
 				if (dayofweek == 7)
 				{
 					dayofweek = 0;
+					break;
 				}
 			}
 			firstSunday = firstSunday.AddDays(difference);
