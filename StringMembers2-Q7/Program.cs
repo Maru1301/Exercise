@@ -10,15 +10,19 @@ namespace StringMembers2_Q7
 	{
 		static void Main(string[] args)
 		{
-			Console.Write("請輸入兩個含有小數點的數: ");
+			Console.Write("請輸入兩個數: ");
 			bool isDecimal1 = decimal.TryParse(Console.ReadLine(), out decimal num1), 
 				isDecimal2 = decimal.TryParse(Console.ReadLine(), out decimal num2);
 
+			if(!isDecimal1 && !isDecimal2)
+			{
+				Console.WriteLine("輸入錯誤");
+				return;
+			}
+
 			decimal sum = num1 + num2;
 
-			string result = sum.ToString("#.##");
-
-			Console.WriteLine(result);
+			Console.WriteLine($"{num1} + {num2} = {sum:f2}");
 		}
 	}
 }
