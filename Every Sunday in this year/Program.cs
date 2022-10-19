@@ -23,17 +23,11 @@ namespace Every_Sunday_in_this_year
 			DateTime firstSunday = new DateTime(year, 1, 1);
 
 			int dayofweek = Convert.ToInt32(firstSunday.DayOfWeek);
-			int difference = 0;
-			while (dayofweek != 0)
+
+			if(dayofweek != 0)
 			{
-				difference++;
-				dayofweek++;
-				if (dayofweek == 7)
-				{
-					break;
-				}
+				firstSunday = firstSunday.AddDays(7-dayofweek);
 			}
-			firstSunday = firstSunday.AddDays(difference);
 
 			for (DateTime Sunday = firstSunday; Sunday.Year <= year; Sunday = Sunday.AddDays(7))
 			{
