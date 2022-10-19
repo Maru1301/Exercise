@@ -17,8 +17,7 @@ namespace Every_Sunday_in_this_year
 			{
 				Console.WriteLine("輸入錯誤");
 			}
-			DateTime[] Sundays = new DateTime[0];
-			int index = 0;
+			List<DateTime> Sundays = new List<DateTime>();
 
 			//find the first Sunday
 			DateTime firstSunday = new DateTime(year, 1, 1);
@@ -31,17 +30,18 @@ namespace Every_Sunday_in_this_year
 				dayofweek++;
 				if (dayofweek == 7)
 				{
-					dayofweek = 0;
 					break;
 				}
 			}
 			firstSunday = firstSunday.AddDays(difference);
 
-			for (DateTime Sunday = firstSunday; Sunday.Year <= year; Sunday = Sunday.AddDays(7), index++)
+			for (DateTime Sunday = firstSunday; Sunday.Year <= year; Sunday = Sunday.AddDays(7))
 			{
-				Array.Resize(ref Sundays, index + 1);
-				Sundays[index] = Sunday;
-				Console.WriteLine(Sundays[index]);
+				Sundays.Add(Sunday);
+			}
+			foreach(DateTime Sunday in Sundays)
+			{
+				Console.WriteLine(Sunday);
 			}
 		}
 	}
