@@ -11,14 +11,11 @@ namespace DateTime_Q6
 		static void Main(string[] args)
 		{
 			Console.Write("請輸入日期: ");
-			string input = Console.ReadLine();
-			if (string.IsNullOrEmpty(input))
+			bool isDate = DateTime.TryParse(Console.ReadLine(), out DateTime dt);
+			if (!isDate)
 			{
-				Console.WriteLine("請輸入正確日期");
-				return;
+				Console.WriteLine("輸入錯誤");
 			}
-
-			bool isDate = DateTime.TryParse(input, out DateTime dt);
 
 			int day = dt.Day;
 
