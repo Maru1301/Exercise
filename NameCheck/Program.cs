@@ -17,8 +17,7 @@ namespace NameCheck
 			Console.Write("請輸入你的名字: ");
 			string input = Console.ReadLine();
 
-			bool isSame = (input == answer);
-			if (isSame)
+			if (input == answer)
 			{
 				Console.WriteLine("輸入正確");
 			}
