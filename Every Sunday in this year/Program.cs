@@ -31,7 +31,6 @@ namespace Every_Sunday_in_this_year
 				dayofweek++;
 				if (dayofweek == 7)
 				{
-					dayofweek = 0;
 					break;
 				}
 			}
