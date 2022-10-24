@@ -15,17 +15,57 @@ namespace Exec_DeclareClass
 
 	class Address
 	{
-		public string City { get; set; }
-		public string ZipCode { get; set; }
-		public string Street { get; set; }
+		private string _City;
+		public string City 
+		{ 
+			get => _City; 
+			set => _City = value; 
+		}
+
+		private string _ZipCode;
+		public string ZipCode 
+		{ 
+			get => ZipCode; 
+			set => ZipCode = value; 
+		}
+
+		private string _Street;
+		public string Street 
+		{ 
+			get => _Street; 
+			set => _Street = value; 
+		}
 	}
 
 	class Telephone
 	{
-		public string CountryCode { get; set; }
-		public string AreaCode { get; set; }
-		public string Number { get; set; }
-		public string Ext { get; set; }
+		private string _CountryCode;
+		public string CountryCode 
+		{ 
+			get => _CountryCode; 
+			set => _CountryCode = value; 
+		}
+
+		private string _AreaCode;
+		public string AreaCode 
+		{ 
+			get => _AreaCode; 
+			set => _AreaCode = value; 
+		}
+
+		private string _Number;
+		public string Number 
+		{ 
+			get => _Number; 
+			set => _Number = value; 
+		}
+
+		private string _Ext;
+		public string Ext 
+		{ 
+			get => _Ext; 
+			set => _Ext = value; 
+		}
 	}
 
 	class Member
